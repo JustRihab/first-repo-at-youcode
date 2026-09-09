@@ -15,3 +15,9 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+while (true) {
+    let n = Math.floor(Math.sqrt(1000)) + 1;
+    let square = n * n;
+    console.log(square);
+    break;
+}

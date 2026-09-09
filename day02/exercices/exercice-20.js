@@ -15,3 +15,13 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+for (let num = 100; num <= 999; num++) {
+    let str = String(num);
+    let a = Number(str[0]);
+    let b = Number(str[1]); 
+    let c = Number(str[2]); 
+    let sum = (a * a * a) + (b * b * b) + (c * c * c);
+    if (sum === num) {
+        console.log(num);
+    }
+}
