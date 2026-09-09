@@ -1,11 +1,11 @@
-# 📅 Jour 01 — Variables, Types, Opérateurs et Conditions
+# 📅 Jour 02 — Répétition et Automatisation (Boucles)
 
 > [!IMPORTANT]
 > Travaille dans l'ordre, teste chaque solution et crée plusieurs commits pendant la journée.
 
 ## 🎯 Objectif de la journée
 
-Ce premier chapitre pose les fondations indispensables de la programmation en JavaScript. Avant de pouvoir créer des algorithmes complexes, il est crucial de savoir comment stocker des informations (variables), de quel type elles sont (texte, nombre, booléen), comment les manipuler (opérateurs) et comment prendre des décisions (conditions). Que vous soyez débutant ou que vous ayez déjà codé, la maîtrise parfaite de ces bases est non négociable.
+Imaginez devoir écrire `console.log("Bonjour")` mille fois. C'est impensable ! Les boucles sont la solution à ce problème. Elles permettent d'exécuter un bloc de code plusieurs fois, de manière automatisée, jusqu'à ce qu'une condition soit remplie. En JavaScript, les boucles les plus courantes sont `for` et `while`. C'est le cœur de l'automatisation en programmation.
 
 ## 🧭 Parcours
 
@@ -21,7 +21,7 @@ Ce premier chapitre pose les fondations indispensables de la programmation en Ja
 Depuis la racine du dépôt, exécute un exercice avec :
 
 ```bash
-node day01/exercices/exercice-01.js
+node day02/exercices/exercice-01.js
 ```
 
 Remplace `01` par le numéro souhaité. Pour contrôler toute ta progression :
@@ -44,8 +44,8 @@ Après chaque groupe d'exercices :
 
 ```bash
 git status
-git add day01
-git commit -m "jour 01 : terminer le niveau 1"
+git add day02
+git commit -m "jour 02 : terminer le niveau 1"
 git push
 ```
 
