@@ -19,5 +19,8 @@ let totalItems = 45;
 let itemsPerPage = 10;
 let currentPage = 1;
 while (totalItems > 0) {
-
+    let itemsOnCurrentPage = totalItems >= itemsPerPage ? itemsPerPage : totalItems;
+    console.log("Scraping page " + currentPage + " (" + itemsOnCurrentPage + " items)");
+    totalItems -= itemsOnCurrentPage;
+    currentPage++;
 }
