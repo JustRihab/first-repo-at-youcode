@@ -1,27 +1,17 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 02 · EXERCICE 14 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
- * LE PLUS PETIT CARRÉ PARFAIT SUPÉRIEUR
+ * JOUR 05 · EXERCICE 10 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
+ * RETIRER DES ÉLÉMENTS (SPLICE)
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Trouvez et affichez le plus petit carré parfait (ex: 4, 9, 16) strictement supérieur à 1000 en utilisant un while.
+ * Vous avez mois = ["Jan", "Fev", "MARS_EN_TROP", "Avril"]. Utilisez .splice() pour retirer "MARS_EN_TROP" sans toucher aux autres.
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-14
- * ▶️ Commande : node day02/exercices/exercice-14.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-10
+ * ▶️ Commande : node day05/exercices/exercice-10.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-let n = 1;
-while (true) {
-    let square = n * n;
-    if (square > 1000) {
-        console.log(square);
-        break;
-    }
-    n++;
-}
-

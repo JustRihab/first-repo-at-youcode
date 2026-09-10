@@ -1,27 +1,17 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 02 · EXERCICE 14 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
- * LE PLUS PETIT CARRÉ PARFAIT SUPÉRIEUR
+ * JOUR 05 · EXERCICE 15 · NIVEAU 3 : DÉFI (AVANCÉS)
+ * FUSION TRIÉE
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Trouvez et affichez le plus petit carré parfait (ex: 4, 9, 16) strictement supérieur à 1000 en utilisant un while.
+ * Vous avez deux tableaux DÉJÀ triés : [1, 3, 5] et [2, 4, 6]. Écrivez un algorithme pour les fusionner en un seul tableau trié [1, 2, 3, 4, 5, 6] (sans utiliser .sort()).
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-14
- * ▶️ Commande : node day02/exercices/exercice-14.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-15
+ * ▶️ Commande : node day05/exercices/exercice-15.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-let n = 1;
-while (true) {
-    let square = n * n;
-    if (square > 1000) {
-        console.log(square);
-        break;
-    }
-    n++;
-}
-

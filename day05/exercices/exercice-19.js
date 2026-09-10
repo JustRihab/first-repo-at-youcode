@@ -1,27 +1,17 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 02 · EXERCICE 14 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
- * LE PLUS PETIT CARRÉ PARFAIT SUPÉRIEUR
+ * JOUR 05 · EXERCICE 19 · NIVEAU 3 : DÉFI (AVANCÉS)
+ * RECHERCHE BINAIRE (CONCEPT DE BASE)
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Trouvez et affichez le plus petit carré parfait (ex: 4, 9, 16) strictement supérieur à 1000 en utilisant un while.
+ * Contrairement à la recherche linéaire (parcourir tout le tableau un par un), la recherche binaire cherche un élément dans un tableau TRIÉ en coupant l'espace de recherche en deux à chaque fois. Essayez de comprendre et d'implémenter ce concept pour trouver l'index de 45 dans [10, 20, 30, 40, 45, 50, 60].
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-14
- * ▶️ Commande : node day02/exercices/exercice-14.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-19
+ * ▶️ Commande : node day05/exercices/exercice-19.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-let n = 1;
-while (true) {
-    let square = n * n;
-    if (square > 1000) {
-        console.log(square);
-        break;
-    }
-    n++;
-}
-
