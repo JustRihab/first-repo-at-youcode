@@ -15,3 +15,20 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let arr = [10, 20, 30, 40, 45, 50, 60];
+let target = 45;
+let trouve = -1;
+for ( let debut=0, fin=arr.length - 1 ; debut<=fin; ) {
+    let milieu = Math.floor((debut+fin)/2);
+    if (arr[milieu] === target) {
+        trouve = milieu;
+        break;
+    }
+    else if (arr[milieu] < target) {
+        debut = milieu + 1;
+    }
+    else {
+        fin = milieu - 1;
+    }
+}
+console.log(trouve);

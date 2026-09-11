@@ -15,3 +15,12 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let tab2D = [[1, 2], [3, 4], [5, 6]];
+let tab1D = [];
+for ( let i=0; i<tab2D.length; i++ ) {
+    let inTab = tab2D[i];
+    for ( let j=0; j<inTab.length; j++ ) {
+        tab1D.push(inTab[j]);
+    }
+}
+console.log(tab1D);

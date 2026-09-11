@@ -15,3 +15,28 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function mergeSortedArrays(tab1,tab2) {
+    let result = [];
+    let i = 0;
+    let j = 0;
+    for ( ; i<tab1.length && j<tab2.length; ) {
+        if (tab1[i]<=tab2[j]) {
+            result.push(tab1[i]);
+            i++;
+        }
+        else {
+            result.push(tab2[j]);
+            j++;
+        }
+    }
+    for ( ; i<tab1.length; i++) {
+        result.push(tab1[i]);
+    }
+    for ( ; j<tab2.length; j++) {
+        result.push(tab2[j]);
+    }
+    return result;
+}
+let arr1 = [1, 3, 5];
+let arr2 = [2, 4, 6];
+console.log(mergeSortedArrays(arr1, arr2));  

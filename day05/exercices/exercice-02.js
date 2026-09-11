@@ -15,3 +15,8 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let invites = [];
+invites [0] = "Yassine";
+invites [1] = "Sara";
+invites [2] = "Amine";
+console.log(invites);

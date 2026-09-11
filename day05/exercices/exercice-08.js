@@ -15,3 +15,21 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function maXmin(tab) {
+    let min = tab[0];
+    let max = tab[0];
+    for (let i=1; i<tab.length; i++) {
+        if (tab[i] < min) {
+            min = tab[i]; 
+        }
+        else if (tab[i] > max) {
+            max = tab[i]; 
+        }
+    }
+    return {min, max};
+}
+let numbers = [6, 10, 21, 8, 5, 12];
+let result = maXmin(numbers);
+console.log(result);
+
+

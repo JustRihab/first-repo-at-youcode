@@ -15,3 +15,12 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+let tab = ["Prix", 15.5, null, "Quantite", 3, undefined, "Total", 46.5];
+for ( let i=0; i<tab.length; i++) {
+    if (typeof tab[i] !== "number") {
+        tab.splice(i,1);
+        i--;
+    }
+}
+console.log(tab);

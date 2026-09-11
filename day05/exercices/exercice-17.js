@@ -15,3 +15,23 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function countWords(tab) {
+    let counts = {};
+    for ( let i=0; i<tab.length; i++ ) {
+        let mot = tab[i];
+        if (counts[mot]) {
+            counts[mot]++;
+        }
+        else {
+            counts[mot] = 1;
+        }
+    }
+    for (let [mot, nb] of Object.entries(counts)) {
+        console.log(mot + ": " + nb);
+    }
+}
+let mots = ["pomme", "banane", "pomme", "orange", "banane", "pomme"];
+countWords(mots);
+
+
+

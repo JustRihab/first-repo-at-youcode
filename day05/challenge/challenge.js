@@ -20,3 +20,40 @@
 
 // Découpe d'abord le problème en petites étapes.
 // TODO: écris ta solution ici.
+let panier = [101, 105, 101, 102];
+function ajouterAuPanier(id) {
+    panier.push(id);
+}
+function retirerDuPanier(id) {
+    let newPanier = [];
+    for ( let i=0; i<panier.length; i++ ) {
+        if (panier[i] !== id ) {
+            newPanier.push(panier[i]);
+        }
+    }
+    panier = newPanier;
+}
+function afficherQuantites() {
+    let quantite = {};
+    for ( let i=0; i<panier.length; i++ ) {
+        let article = panier[i];
+        let count = 0;
+        for ( let j = 0; j < panier.length; j++ ) {
+            if (panier[j] === article) {
+                count++;
+            }
+        }
+        if (!quantite[article]) {
+            quantite[article] = count;
+            console.log("Article " + article + " : " + count + " exemplaires.");
+        }
+    }
+
+}
+console.log("Au debut :",panier);
+ajouterAuPanier(103);
+console.log("Après ajout :", panier);
+afficherQuantites();
+retirerDuPanier(101);
+console.log("Après retrait de 101 :", panier);
+afficherQuantites();
