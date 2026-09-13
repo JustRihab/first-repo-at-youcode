@@ -15,3 +15,13 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let cache = {};
+function calcul(nbr) {
+    if (cache[nbr] !== undefined){
+        return cache[nbr];
+    }
+    let resultats = nbr * nbr;
+    cache[nbr] = resultats;
+    return resultats;
+}
+console.log(calcul(5));

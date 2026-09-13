@@ -15,3 +15,12 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function alarme(message, secondes) {
+    let delai = secondes * 1000;
+    setTimeout(function() {
+        console.log("Alarme: " + message);
+    }, delai);
+}
+let message = "get up right now!!!";
+let secondes = 2;
+alarme(message, secondes);

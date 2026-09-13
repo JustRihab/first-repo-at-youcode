@@ -24,8 +24,23 @@
 // TODO: écris ta solution ici.
 let or = 0;
 function ajouterOr(montant) {
+    or += montant;
+    console.log("Vous avez ramassé " + montant + " or. " + " Total: " + or);
 }
 function depenserOr(montant) {
+    if (or >= montant) {
+        or -= montant;
+        console.log("Vous avez acheter un objet pour " + or );
+    }
+    else {
+        console.log("Fonds insuffisants.");
+    }
 }
-function combatGagne(){
+function combatGagne() {
+    let gain = Math.floor(Math.random() * (50 - 10 + 1) + 10);
+    ajouterOr(gain);
 }
+combatGagne();
+combatGagne(); 
+combatGagne(); 
+depenserOr(100);
