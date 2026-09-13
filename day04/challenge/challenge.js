@@ -24,3 +24,15 @@
 
 // Découpe d'abord le problème en petites étapes.
 // TODO: écris ta solution ici.
+let tab = ["noob", "idiot", "nul"];
+function filtrerMessage(message) {
+    let mot = message.split(" ");
+    for ( let i=0; i<mot.length; i++ ) {
+        let motNettoye = mot[i].toLowerCase();
+        if (tab.includes(motNettoye)) {
+            mot[i] ="*".repeat(mot[i].length);
+        }
+    } 
+    return mot.join(" ");
+}
+console.log(filtrerMessage("Tu es vraiment un GROS NooB et un idiot !!"));
