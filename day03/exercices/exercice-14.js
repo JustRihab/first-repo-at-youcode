@@ -15,3 +15,26 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function calculatrice(a, b, signe) {
+    switch (signe) {
+        case "+":
+            console.log(a + b);
+            break;
+        case "-":
+            console.log(a - b);
+            break;
+        case "*":
+            console.log(a * b);
+            break;
+        case "/":
+            console.log(a / b);
+            break;
+        default:
+        console.log("sign invalid.");
+    }
+}
+let a = 6;
+let b = 10;
+let signe = "+";
+calculatrice(a, b, signe);
+

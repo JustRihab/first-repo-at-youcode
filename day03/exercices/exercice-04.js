@@ -15,3 +15,13 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function estMajeur(age) {
+    if (age>=18){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+let age = 18;
+console.log(estMajeur(age));

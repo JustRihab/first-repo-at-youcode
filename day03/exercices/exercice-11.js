@@ -15,3 +15,15 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function calculerFactorielle(n) {
+    let fact = 1;
+    if (n == 0) {
+        return 1;
+    }
+    for (let i=1; i <=n; i++) {
+        fact *= i;
+    } 
+    return fact;
+}
+let a = 6;
+console.log(calculerFactorielle(a));

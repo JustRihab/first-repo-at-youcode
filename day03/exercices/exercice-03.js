@@ -15,3 +15,9 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function madToEur(mad) {
+    let taux = 10.8;
+    return mad/taux;
+}
+let mad = 50;
+console.log( madToEur(mad));

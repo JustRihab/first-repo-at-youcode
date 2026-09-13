@@ -15,3 +15,10 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let multiplier = (a, b) => a * b;
+function executerOperation(a, b, operation) {
+    return operation(a, b);
+}
+let a = 10;
+let b = 6;
+console.log(executerOperation(a, b, multiplier));

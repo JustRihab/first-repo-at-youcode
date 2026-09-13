@@ -15,3 +15,10 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function soustraire(a, b) {
+    let c = a - b;
+    return c;
+}
+let a = 10;
+let b = 6;
+console.log(soustraire(a, b));

@@ -15,3 +15,19 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function trouverMax(a, b, c) {
+    let max;
+    if (a>b && a>c) {
+        return max = a;
+    }
+    else if (b>a && b>c) {
+        return max = b;
+    }
+    else if (c>a && c>b) {
+        return max = c;
+    }
+}
+let a = 6;
+let b = 10;
+let c = 11;
+console.log( trouverMax(a, b, c));

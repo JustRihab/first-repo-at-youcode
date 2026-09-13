@@ -16,3 +16,13 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function estPalindrome(mot) {
+    let resultat = mot.split("");  
+    let inverse = resultat.slice().reverse().join(""); 
+    if (mot === inverse) {
+        return true;
+    }
+}
+let mot = "radar";
+console.log(estPalindrome(mot));
+

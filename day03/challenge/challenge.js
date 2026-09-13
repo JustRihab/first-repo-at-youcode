@@ -22,3 +22,10 @@
 
 // Découpe d'abord le problème en petites étapes.
 // TODO: écris ta solution ici.
+let or = 0;
+function ajouterOr(montant) {
+}
+function depenserOr(montant) {
+}
+function combatGagne(){
+}
