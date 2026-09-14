@@ -30,7 +30,7 @@ function calculatrice(a, b, signe) {
             console.log(a / b);
             break;
         default:
-        console.log("sign invalid.");
+        console.log("signe invalid.");
     }
 }
 let a = 6;

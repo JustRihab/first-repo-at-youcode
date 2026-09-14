@@ -15,3 +15,14 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function checkPlate(plate) {
+  const regex = /^\d{4,5}-[A-Z]{1,2}-\d{1,2}$/;
+  if (regex.test(plate)) {
+    console.log("Plaque valide");
+  } else {
+    console.log("Plaque invalide");
+  }
+}
+checkPlate("1234-A-56");  
+checkPlate("12345-AB-6");  
+checkPlate("12-ABC-345");  

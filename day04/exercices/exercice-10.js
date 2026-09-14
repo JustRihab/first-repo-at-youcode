@@ -15,3 +15,9 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function adresse(email) {
+    let position = email.indexOf("@");
+    position = email.slice(position + 1);
+    return position;
+}
+console.log(adresse("contact@youcode.ma"));

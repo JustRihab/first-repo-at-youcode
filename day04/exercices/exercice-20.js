@@ -17,3 +17,6 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let phrase = "Les 10 secrets de JavaScript !";
+let minu = phrase.toLocaleLowerCase().replace(/[^\wÀ-ÖØ-öø-ÿ\s]/g, "").trim().replaceAll(" ", "-");
+console.log(minu);

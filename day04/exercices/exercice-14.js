@@ -15,3 +15,8 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let phrase = "Attention aux espaces multiples !";
+phrase = phrase.replace(/[^\wÀ-ÖØ-öø-ÿ\s]/g, "");
+let mot = phrase.trim().split(/\s+/);
+let count = mot.length;
+console.log(count);

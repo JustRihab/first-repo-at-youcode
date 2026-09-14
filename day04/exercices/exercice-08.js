@@ -15,3 +15,10 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function capitaliser(mot) {
+    let wordFirststr = mot[0].toUpperCase();
+    let  wordSecondstr = mot.slice(1).toLowerCase();
+    let word = wordFirststr + wordSecondstr;
+    return word;
+}
+console.log(capitaliser("yOUcoDe"));

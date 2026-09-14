@@ -15,3 +15,8 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let phrase = "Bonjour le monde";
+let mot = phrase.split(" ");
+mot.reverse();
+let newPhrase = mot.join(" ");
+console.log(newPhrase);
